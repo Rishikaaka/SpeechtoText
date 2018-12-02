@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Speech Recording</title>
+</head>
+<body>
+    <div class="container">
+      <div class="form-row">
+          <br>
+          <br>
+          <br>
+          <button type="button" class="btn btn-primary btn-block" onclick="myFunction()"><span class="fa fa-microphone"></span>Start Speaking</button>
+
+              <p id="demo"></p>
+
+              <script>
+              function myFunction() {
+                document.getElementById("demo").innerHTML = "Hello World";
+      }
+      </script>
+      <div class="form-group">
+          <label for="usr">Speak something:</label>
+          <i class="fa fa-microphone"></i>
+          <input type="text" class="form-control" class="fa fa-microphone" id="usr">
+      </div>
+      <h2>javascript</h2>
+      <p id="name">this should be changed</p>
+      <button type="button" class="btn btn-primary" onclick='document.getElementById("name").innerHTML = "change the content of JS from date method to soemthing"'>on click</button>
+      <button type="button" onclick="document.getElementById('name1').innerHTML=Date()">this displays the date</button>
+        <p id="name1"></p>
+      <button type="button" class="btn-primary" onclick="document.getElementById('name1').style.display='none'"></button>
+      <!--types of outputs in javascript-->
+      <h2>output types begin here---!!!</h2>
+      <p id="name2"></p>
+      <script>
+        //document.getElementById("name2").innerHTML= 200+30;
+        document.write(100+100);
+        //window.alert(100+9);
+        //console.log(1+1);
+        var a,b,c;
+        a=1;
+        b=2;
+        c=a*b+10;
+        document.getElementById("name2").innerHTML = c;
+      </script>
+          
+        <h1>this should work</h1>
+            <button type="button" class="btn-primary"></button>
+           <script src="index.js"></script>
+       
+       
+      </div>
+    </div>
+
+  
+</body>
+</html>

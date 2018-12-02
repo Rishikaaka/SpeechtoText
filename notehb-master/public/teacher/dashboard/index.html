@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teacher</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-linedtextarea.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery-linedtextarea.js"></script>
+</head>
+<body>
+	<table>
+		<tr id="top">
+			<td class="left">
+				<div><h1 id="classcode"></h1></div>
+			</td>
+			<td class="right">
+				<img id="logo" src="../../img/notehb-logo.png">
+			</td>
+		</tr>
+		<tr id="bottom">
+			<td class="left">
+				<div id="start-pause-stop">
+					<button id="play-pause" value="paused">
+						<img src="../../img/play-blue.png" class="front" alt="A play button" />
+					</button>
+					<button id="stop">
+						<img src="../../img/stop-blue.png" class="front" alt="A stop button" />
+					</button>
+				</div>
+				<div id="timer">
+					<h1 id="time-elapsed">00:00:00</h1>
+				</div>
+			</td>
+			<td class="right">
+				<div>
+					<textarea id="textarea"></textarea>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
